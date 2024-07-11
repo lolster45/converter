@@ -1,51 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(34, 34, 34);
 }
-#span {
-    color: white;
-}
-.mainBody {
-    width: 400px;
-    height: 150px;
-    box-shadow: 0px 0px 2px 1px #cacaca;
+.converter_wrapper {
     position: relative;
-    
-    left: 25%
+    width: 50%;
+    height: 350px;
+    position: relative;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;    
 }
-
-#tittle {
+#title {
     color: white;
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    margin: 13px 0px;
-
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
-
-#input {
-    background-color: #cacaca;
-
-    height: 25px;
-    margin-left: 20px;
-    text-align: center;
+#user_input_wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2.8rem;
+    height: 90px;
+    width: 90%;
+}
+#equals_icon {
+    color: white;
+}
+.container {
+    border: none;
+    outline: none;
+    height: 60px;
+    width: 40%;
+    font-size: 1rem;
+    padding-left: 15px;
+    color: white;
+    background-color: #2e2e2e;
+}
+#type_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+    width: 85%;
+    margin-top: 20px;
 }
 #inputType, #resultType {
-    background-color: #cacaca;
-    margin-left: 20px;
-    width: 170px;
-    color: black;
+    cursor: pointer;
+    height: 30px;
+    width: 45%;
+    background-color: rgb(47, 47, 47);
+    color: white;
 }
+@media only screen and (max-width: 900px) {
+    .converter_wrapper {
+        height: 400px;
 
-#result {
-    background-color: #cacaca;
-    height: 25px;
-    margin-right: 20px;
-    text-align: center;
+    }
+    #user_input_wrap  {
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .container {
+        width: 100%;
+    }
+    #type_wrap {
+        padding: 0;
+        width: 90%;
+    }
 }
-
-#resultType {
-    margin-left: 13px;
-    width: 170.5px;
+@media only screen and (max-width: 600px) {
+    .converter_wrapper {
+        width: 90%;
+    }
 }

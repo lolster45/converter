@@ -2,31 +2,40 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
     <link rel="stylesheet" href="conversion.css">
+
 </head>
 <body>
-    <div class="mainBody">
-        <h2 id="tittle">Converter:</h2>
+    <div class="converter_wrapper">
+        <h2 id="title">Converter:</h2>
 
-        <input type="text" id="input" placeholder="Input here">
-        
-        <span id="span">=</span>
+        <div id="user_input_wrap">
+            <input type="text" id="input" class="container" placeholder="Input here">
+            
+            <span id="equals_icon">=</span>
+    
+            <input type="text" id="result" class="container" placeholder="Result">
+        </div>
 
-        <input type="text" id="result" placeholder="Result">
+        <div id="type_wrap">
+            <select id="inputType" class="container">
+                <option value="meter">Meter</option>
+                <option value="kilometer">Kilometer</option>
+                <option value="Kg">Kilogram</option>
+                <option value="Ibs">Pounds</option>
+            </select>
+            <select id="resultType" class="container">
+                <option value="meter">Meter</option>
+                <option value="kilometer">Kilometer</option>
+                <option value="Kg">Kilogram</option>
+                <option value="Ibs">Pounds</option>
+    
+            </select>
+        </div>
 
-        <select id="inputType">
-            <option value="meter">Meter</option>
-            <option value="kilometer">Kilometer</option>
-            <option value="Kg">Kilogram</option>
-            <option value="Ibs">Pounds</option>
-        </select>
-        <select id="resultType">
-            <option value="meter">Meter</option>
-            <option value="kilometer">Kilometer</option>
-            <option value="Kg">Kilogram</option>
-            <option value="Ibs">Pounds</option>
-
-        </select>
         <script src="conversion.js"></script>
     </div>
 </body>
