@@ -1,0 +1,51 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+#span {
+    color: white;
+}
+.mainBody {
+    width: 400px;
+    height: 150px;
+    box-shadow: 0px 0px 2px 1px #cacaca;
+    position: relative;
+    
+    left: 25%
+}
+
+#tittle {
+    color: white;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin: 13px 0px;
+
+}
+
+#input {
+    background-color: #cacaca;
+
+    height: 25px;
+    margin-left: 20px;
+    text-align: center;
+}
+#inputType, #resultType {
+    background-color: #cacaca;
+    margin-left: 20px;
+    width: 170px;
+    color: black;
+}
+
+#result {
+    background-color: #cacaca;
+    height: 25px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#resultType {
+    margin-left: 13px;
+    width: 170.5px;
+}
